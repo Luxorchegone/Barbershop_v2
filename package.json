@@ -1,0 +1,29 @@
+{
+  "name": "barbershop_v2",
+  "version": "1.0.0",
+  "description": "Training project",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luxorchegone/Barbershop_v2.git"
+  },
+  "author": "Vladimir Gladkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luxorchegone/Barbershop_v2/issues"
+  },
+  "homepage": "https://github.com/Luxorchegone/Barbershop_v2#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.0.9"
+  }
+}
