@@ -2,7 +2,6 @@
   "name": "barbershop_v2",
   "version": "1.0.0",
   "description": "Training project",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
@@ -25,5 +24,8 @@
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
     "postcss": "^8.0.9"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

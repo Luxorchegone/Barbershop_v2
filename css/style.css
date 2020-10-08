@@ -1,0 +1,112 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  background: #292929;
+  background-size: 720px auto; }
+
+@media (min-width: 768px) {
+  body {
+    background: #292929;
+    background-size: 1178px auto; } }
+
+@media (min-width: 1280px) {
+  body {
+    background: #292929;
+    background-size: 1391px auto; } }
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #6f835a; }
+
+.page-header__logo {
+  height: 85px;
+  background-color: chartreuse; }
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 2;
+    height: 400px; } }
+
+@media (min-width: 1280px) {
+  .page-header__logo {
+    height: 648px; } }
+
+.main-nav {
+  width: 320px;
+  margin: 0 auto; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 40px;
+  outline: 2px solid blueviolet; }
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0; }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto; }
+  .site-list {
+    width: 570px;
+    min-height: 70px; }
+  .user-list {
+    width: 60px; } }
+
+@media (min-width: 1280px) {
+  .main-nav__wrapper {
+    width: 960px; }
+  .site-list {
+    width: 780px; }
+  .user-list {
+    width: 160px; } }
+
+.stats {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ff0000;
+  min-height: 570px;
+  outline: 2px solid blueviolet; }
+
+.stats__header {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.stats__list {
+  width: 100%;
+  outline: 2px solid blueviolet; }
+
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin-top: -185px; }
+  .stats__list {
+    display: flex; } }
+
+@media (min-width: 1280px) {
+  .stats {
+    width: 960px;
+    margin-top: -160px;
+    display: flex; }
+  .stats__header {
+    width: 240px; } }

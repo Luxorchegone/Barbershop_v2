@@ -1,0 +1,46 @@
+.stats {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #ff0000; // временый
+    min-height: 570px; // временый
+    outline: 2px solid blueviolet;//временно
+}
+
+.stats__header {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.stats__list {
+    width: 100%;
+    outline: 2px solid blueviolet;//временно
+}
+
+@media (min-width: $tablet-width) {
+    .stats {
+        width: 640px;
+        margin-top: -185px;
+    }
+
+    .stats__list {
+        display: flex;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .stats {
+        width: 960px;
+        margin-top: -160px;
+        display: flex;
+    }
+
+    .stats__header {
+        width: 240px;
+    }
+
+    .stats__list {
+        width: 640px;
+    }
+}

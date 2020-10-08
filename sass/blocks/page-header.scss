@@ -1,0 +1,25 @@
+@import "../variables.scss";
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(111, 131, 90);// временый
+}
+
+.page-header__logo {
+    height: 85px;
+    background-color: chartreuse;// временый
+}
+
+@media (min-width: $tablet-width) {
+    .page-header__logo {
+        order: 2;
+        height: 400px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .page-header__logo {
+        height: 648px;
+    }
+}

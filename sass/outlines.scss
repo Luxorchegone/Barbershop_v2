@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+body {
+    background: $bg-darkgrey;
+    background-size: 720px auto;
+}
+@media (min-width: $tablet-width) {
+    body {
+        background: $bg-darkgrey;
+        background-size: 1178px auto;
+    }
+}
+@media (min-width: $desktop-width) {
+    body {
+        background: $bg-darkgrey;
+        background-size: 1391px auto;
+    }
+}
