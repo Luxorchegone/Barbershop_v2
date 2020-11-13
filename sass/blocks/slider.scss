@@ -1,0 +1,13 @@
+.slider__input {
+    display: none;
+}
+
+.slider__toggle {
+    box-sizing: border-box;
+    font-size: 0;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #f7f4f1;
+    transform: rotate(45deg);  
+}
+
