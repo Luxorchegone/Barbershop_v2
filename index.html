@@ -18,7 +18,7 @@
                 <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
                 <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
                     alt="Барбершоп «Бородинский»">
-                    
+
             </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -142,28 +142,37 @@
                 <h2 class="news__title">Новости и акции</h2>
                 <ul class="news__list">
                     <li class="news__item">
-                        <time class="news__date" datetime="2020-02-23">
-                            <b class="news__day">23</b> фев
-                        </time>
-                        <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик
-                            во время стрижки.</p>
+                        <a class="news__item-wrapper" href="#">
+                            <time class="news__date" datetime="2020-02-23">
+                                <b class="news__day">23</b> фев
+                            </time>
+                            <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить
+                                стаканчик
+                                во время стрижки.
+                            </p>
+                        </a>
                     </li>
                     <li class="news__item">
-                        <time class="news__date" datetime="2020-02-23">
-                            <b class="news__day">25</b> фев
-                        </time>
-                        <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества
-                            титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+                        <a class="news__item-wrapper" href="#">
+                            <time class="news__date" datetime="2020-02-25">
+                                <b class="news__day">25</b> фев
+                            </time>
+                            <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель
+                                множества
+                                титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+                        </a>
                     </li>
                     <li class="news__item">
-                        <time class="news__date" datetime="2020-02-23">
+                        <a class="news__item-wrapper" href="#">
+                        <time class="news__date" datetime="2020-02-26">
                             <b class="news__day">26</b> фев
                         </time>
                         <p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и
                             узнаете, в чем здесь подвох!</p>
+                        </a>
                     </li>
                 </ul>
-                <a class="newы__to-all button" href="#">Показать все</a>
+                <a class="news__to-all button button--news" href="#">Показать все</a>
             </div>
         </section>
         <section class="reviews">
@@ -214,7 +223,7 @@
                 <b class="page-footer__title">Барбершоп «Бородинский»</b>
                 <p class="page-footer__text">
                     г.Санкт-Питербург, ул. Большая Конюшенная 19/8<br>
-                    <a class="contacts__phone" href="tel:+78125556666">
+                    <a class="contacts__phone button button--footer" href="tel:+78125556666">
                         <span class="contacts__phone-mobile">Тел.:</span>+7 (812) 555-66-66
                     </a>
                 </p>
@@ -241,7 +250,7 @@
             </div>
             <div class="page-footer__copyright copyright">
                 <b class="copyright__text">Разработано:</b>
-                <a class="button copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
+                <a class="button copyright_link button--footer" href="https://htmlacademy.ru/intensive/adaptive">
                     HTML Academy
                 </a>
             </div>
