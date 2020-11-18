@@ -7,7 +7,14 @@
     font-size: 0;
     height: 7px;
     width: 7px;
-    border: 1px solid #f7f4f1;
-    transform: rotate(45deg);  
+    transform: rotate(45deg); 
+    cursor: pointer; 
 }
 
+.slider__toggle--for-light-background {
+    border: 1px solid #858483;
+}
+
+.slider__toggle--for-dark-background {
+    border: 1px solid #f7f4f1;
+}
