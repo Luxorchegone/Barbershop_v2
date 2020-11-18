@@ -42,9 +42,9 @@
     padding-bottom: 56px;
     color: #000000;
     text-align: left;
-
+    display: none;
     &:nth-child(n+2) {
-        display: none;
+       
     }
 
 }
@@ -68,10 +68,12 @@
     display: block;
     margin-bottom: 12px;
 }
+
 .reviews__prev,
 .reviews__next {
     display: none;
 }
+
 .reviews__toggles {
     position: absolute;
     bottom: 28px;
@@ -86,14 +88,14 @@
     transform: translateX(-50%);
 }
 
-    #reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
-    #reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
-    #reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
+#reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
+#reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
+#reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
     background-color: #353535;
-    }
+}
 
-    #reviews-input-1:checked ~ .reviews__items .reviews__item--fast,
-    #reviews-input-2:checked ~ .reviews__items .reviews__item--cool,
-    #reviews-input-3:checked ~ .reviews__items .reviews__item--price {
+#reviews-input-1:checked ~ .reviews__list .reviews__item:nth-child(1),
+#reviews-input-2:checked ~ .reviews__list .reviews__item:nth-child(2),
+#reviews-input-3:checked ~ .reviews__list .reviews__item:nth-child(3) {
     display: block;
-    }
+}
