@@ -190,4 +190,35 @@
         }
     }
 
+    .reviews__toggles {
+        bottom: 68px;
+        padding-right: 25px;
+        padding-left: 25px;
+        background-color: #f8f5f2;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .reviews__wrapper {
+        padding-bottom: 100px;
+    }
+
+    .reviews__item {
+        border: 1px solid #e5ddd5;
+        margin-left: 21px;
+        margin-right: 21px;
+        padding-left: 320px;
+    }
+
+    .reviews__author-image {
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 158px;
+        border-radius: 0;
+    }
+
+    .reviews__toggles {
+        bottom: 47px;
+    }
 }
