@@ -14,9 +14,10 @@
     
 }
 
-.button--news {
+.button--light {
     border: 1px solid #e5ddd5;
     color: #000000;
+    background-color: #f8f5f2;
 
     &:hover,
     &:focus {
@@ -28,6 +29,7 @@
         background-color: #d5c9bd;
     }
 }
+
 .button--footer {
     border: 1px solid #3e3e3e;
     color: #ffffff;
