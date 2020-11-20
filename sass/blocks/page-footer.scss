@@ -32,5 +32,32 @@
 }
 
 @media (min-width: $tablet-width) {
+    .page-footer__wrapper {
+        padding-top: 16px;
+        padding-bottom: 38px;
+        border: none;
+        width: 84%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .page-footer__text {
+        padding: 0;
+        text-align: left;
+    }
+
+    .page-footer__title {
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .page-footer__copyright {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        padding-right: 0;
+    }
     
 }

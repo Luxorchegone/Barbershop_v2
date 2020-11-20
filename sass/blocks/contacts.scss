@@ -6,3 +6,20 @@
 .contacts__phone-mobile {
     display: none;
 }
+
+@media (min-width: $tablet-width) {
+    .contacts__phone-mobile {
+    display: inline-block;
+    text-transform: none;
+    }
+
+    .contacts__phone {
+        border: none;
+        margin: 0;
+        width: 200px;
+        text-align: left;
+        font-weight: normal;
+        padding-top: 10px;
+        padding-bottom: 52px;
+    }
+}

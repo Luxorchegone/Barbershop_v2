@@ -1,4 +1,0 @@
-*.vscode
-*.gitignore
-debug.log
-/node_modules/*
