@@ -41,7 +41,7 @@
     padding-top: 20px;
     padding-bottom: 14px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.3); 
     background-color: $bg-darkgrey;
 }
 
@@ -50,7 +50,8 @@
 }
 
 .stats__legend sup {
-    top: -0.25em;
+    top: -0.1em;
+
     font-size: 90%;
 }
 
@@ -88,6 +89,7 @@
     padding-right: 0;
     font-size: 40px;
     line-height: 40px;
+    font-weight: bold;
 }
 
 .stats__value sup {

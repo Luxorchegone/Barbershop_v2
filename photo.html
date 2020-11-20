@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский»</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
+                    alt="Барбершоп «Бородинский»">
+            </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a>Работы</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">Записаться</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item">
+                        <a class="user-list__login" href="login.html">
+                            <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16">
+                                <polygon points="0,7 7.01,7 7.01,4.06 10.96,8.01 7.01,11.91 7.01,9.06 0,9.02 " />
+                                <polygon points="7.01,0 7.01,2 14.03,2 14.03,13.99 7.01,13.99 7.01,16 16,16 16,0 " />
+                            </svg>
+                            Войти
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="page-main">
+        <header class="page-title">
+            <h1 class="page-title__title">Наши работы</h1>
+            <a class="button" href="#">На главную</a>
+        </header>
+        <!--<h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1> -->
+        <section class="works">
+            <article class="works-item works-item--work-of-month">
+                <div class="works-item__image-wrapper">
+                    <picture></picture>
+                </div>
+                <div class="works-item__rewiev">
+                    <h2 class=works-item__rewiev-title>
+                        Лжепетр Мчиславский
+                    </h2>
+                    <blockquote class="works-item__rewiev-text">
+                        Где я только не стригся, но так как делаете это вы - не умеет никто другой! Еще раз спасибо и до
+                        скорого!
+                    </blockquote>
+                    <ul class="works-item__parameter-list">
+                        <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                        <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритье</li>
+                        <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="works-item">
+                <div class="works-item__image-wrapper">
+                    <picture></picture>
+                </div>
+                <div class="works-item__rewiev">
+                    <h2 class=works-item__rewiev-title>
+                        Саша Мальцев
+                    </h2>
+                    <blockquote class="works-item__rewiev-text">
+                        Попросил омолодить и омолодили!
+                        Кто теперь скажет, что мне 45?
+                    </blockquote>
+                    <ul class="works-item__parameter-list">
+                        <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="works-item">
+                <div class="works-item__image-wrapper">
+                    <picture></picture>
+                </div>
+                <div class="works-item__rewiev">
+                    <h2 class=works-item__rewiev-title>
+                        Владимир Иваныч
+                    </h2>
+                    <blockquote class="works-item__rewiev-text">
+                        К зимнему сезону — готов!
+                    </blockquote>
+                    <ul class="works-item__parameter-list">
+                        <li class="works-item__parameter-item works-item__parameter-item--shaving">Борода</li>
+                        <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="works-item works-item--work-of-month">
+                <div class="works-item__image-wrapper">
+                    <picture></picture>
+                </div>
+                <div class="works-item__rewiev">
+                    <h2 class=works-item__rewiev-title>
+                        Винстон Синий
+                    </h2>
+                    <blockquote class="works-item__rewiev-text">
+                        Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
+                    </blockquote>
+                    <ul class="works-item__parameter-list">
+                        <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                    </ul>
+                </div>
+            </article>
+        </section>   
+       
+        <section class="price">
+            <h2 class="price__title">Прейскурант</h2>
+            <table class="stats__list">
+                <tr>
+                    <td class="stats__value">
+                        1 500<sup>*</sup>
+                    </td>
+                    <td class="stats__field">
+                        рублей<br> вложений
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__contacts contacts">
+                <b class="page-footer__title">Барбершоп «Бородинский»</b>
+                <p class="page-footer__text">
+                    г.Санкт-Питербург, ул. Большая Конюшенная 19/8<br>
+                    <a class="contacts__phone" href="tel:+78125556666">
+                        <span class="contacts__phone-mobile">Тел.:</span>+7 (812) 555-66-66
+                    </a>
+                </p>
+            </div>
+            <div class="page-footer__social social">
+                <b class="social__title">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vkontakte" href="https://vk.com">
+                            Мы в Вконтакте
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://vk.com">
+                            Мы в Фейсбуке
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="https://vk.com">
+                            Мы в Инстаграме
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано:</b>
+                <a class="button copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
+                    HTML Academy
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let navMain = document.querySelector('.main-nav');
+        let navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', () => {
+            if (navMain.classList.contains('main-nav--closed')) {
+                navMain.classList.remove('main-nav--closed');
+                navMain.classList.add('main-nav--opened');
+            } else {
+                navMain.classList.remove('main-nav--opened');
+                navMain.classList.add('main-nav--closed');
+            }
+
+        });
+    </script>
+</body>
+
+</html>

@@ -50,7 +50,34 @@
     color: black;
     text-decoration: none;
     border-bottom: 1px solid #e5ddd5;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;   
+    
+    &:hover .news__text,
+    &:focus .news__text {
+        color: #826550;
+        text-decoration: underline; 
+    }
+
+    &:hover .news__date {
+        background-color: #826550;
+
+        &::after {
+            border-top-color: #826550;
+        }
+    }
+
+    &:active .news__text {
+        color: #6a4d38;
+    }
+
+    &:active .news__date {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #6a4d38;
+
+        &::after {
+            border-top-color: #6a4d38;
+        }
+    }
 }
 
 .news__date {
@@ -139,7 +166,7 @@
     .news__to-all {
         position: absolute;
         right: 0;
-        top: 85px;
+        top: 82px;
         margin: 0;
     }
 }
