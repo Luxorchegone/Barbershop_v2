@@ -59,5 +59,19 @@
         top: 12px;
         padding-right: 0;
     }
-    
+}
+
+@media (min-width: $desktop-width) {
+    .page-footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-footer__copyright {
+        position: static;
+    }
+
+    .page-footer__social {
+        margin-right: 130px;
+    }
 }

@@ -2,4 +2,11 @@
     text-align: center;
     margin: 0;
     margin-bottom: 12px;
+    line-height: 18px;
+}
+
+@media (min-width: $desktop-width) {
+    .copyright__text {
+        margin-bottom: 15px;
+    }
 }

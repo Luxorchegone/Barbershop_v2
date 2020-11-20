@@ -1126,6 +1126,15 @@ body {
     top: 12px;
     padding-right: 0; } }
 
+@media (min-width: 1280px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .page-footer__copyright {
+    position: static; }
+  .page-footer__social {
+    margin-right: 130px; } }
+
 .social__title {
   display: none; }
 
@@ -1159,10 +1168,41 @@ body {
   .social__link--instagram {
     background-image: url(../img/ig-big.png); }
 
+@media (min-width: 1280px) {
+  .social__title {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .social__item {
+    height: 48px;
+    width: 48px;
+    flex-grow: 0;
+    margin-right: 6px; }
+    .social__item:nth-child(3) {
+      margin-right: 0; }
+  .social__link {
+    height: 48px;
+    width: 48px; }
+    .social__link--vkontakte {
+      background-image: url(../img/vk-small.png); }
+    .social__link--facebook {
+      background-image: url(../img/fb-small.png); }
+    .social__link--instagram {
+      background-image: url(../img/ig-small.png); } }
+
 .copyright__text {
   text-align: center;
   margin: 0;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  line-height: 18px; }
+
+@media (min-width: 1280px) {
+  .copyright__text {
+    margin-bottom: 15px; } }
 
 .contacts__phone {
   margin-top: 18px;

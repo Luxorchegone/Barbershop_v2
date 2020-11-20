@@ -39,3 +39,41 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+    .social__title {
+        display: block;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .social__item {
+        height: 48px;
+        width: 48px;
+        flex-grow: 0;
+        margin-right: 6px;
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+    .social__link {
+        height: 48px;
+        width: 48px;
+    
+        &--vkontakte {
+            background-image: url(../img/vk-small.png);
+        }
+    
+        &--facebook {
+            background-image: url(../img/fb-small.png);
+        }
+    
+        &--instagram {
+            background-image: url(../img/ig-small.png);
+        }
+    }
+}
