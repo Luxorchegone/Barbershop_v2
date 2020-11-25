@@ -35,8 +35,8 @@ exports.server = server;
 
 //Вотчим изменения в файле стилей и html
 const watch = () => {
-    gulp.watch('sass/style.scss', style );
-    gulp.watch('index.html').on('change', sync.reload );
+    gulp.watch(['sass/*.scss', 'sass/blocks/*.scss'], style );
+    gulp.watch('*.html').on('change', sync.reload );
 };
 
 exports.watch = watch;
