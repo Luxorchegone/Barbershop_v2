@@ -1223,3 +1223,107 @@ body {
     font-weight: normal;
     padding-top: 10px;
     padding-bottom: 52px; } }
+
+.works {
+  background-color: #f8f5f2;
+  color: black; }
+
+.works__wrapper {
+  padding-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 36px;
+  position: relative; }
+  .works__wrapper::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -35px;
+    height: 35px;
+    background-image: url("../img/corner-light.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    fill: #f8f5f2; }
+
+.works__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 32px; }
+
+.works-item {
+  margin-bottom: 20px; }
+  .works-item:last-child {
+    margin-bottom: 0; }
+
+.works-item--work-of-month .works-item__image-wrapper {
+  height: 480px; }
+
+.works-item__image-wrapper {
+  text-align: center;
+  height: 176px;
+  background-color: #e6ded6;
+  overflow: hidden;
+  margin: 0; }
+
+.works-item__image {
+  max-width: 100%;
+  height: auto; }
+
+.works-item__review {
+  padding: 20px;
+  border: 1px solid #e5ddd5;
+  border-top: none; }
+
+.works-item__review-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px; }
+
+.works-item__review-text {
+  margin: 0;
+  margin-bottom: 16px; }
+
+.works-item__parameter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+
+.works-item__parameter-item {
+  position: relative;
+  padding-left: 40px;
+  margin-right: 25px;
+  font-size: 16px;
+  text-transform: uppercase; }
+  .works-item__parameter-item::before {
+    content: "";
+    top: 50%;
+    left: 0;
+    position: absolute;
+    height: 21px;
+    width: 45px;
+    transform: translate(-30%, -50%);
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.works-item__parameter-item--haircut::before {
+  background-image: url(../img/scissors-icon.svg); }
+
+.works-item__parameter-item--shaving::before {
+  background-image: url(../img/beard-icon.svg); }
+
+.works-item__parameter-item--mustache {
+  padding-left: 50px; }
+  .works-item__parameter-item--mustache::before {
+    background-image: url(../img/mustache-icon.svg);
+    transform: translate(-20%, -50%); }
+
+.price {
+  padding: 20px; }
