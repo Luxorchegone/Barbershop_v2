@@ -16,6 +16,7 @@
     background-color: #e6ded6;
     overflow: hidden;
     margin: 0;
+    line-height: 0;
 }
 
 .works-item__image {
@@ -72,7 +73,7 @@
     margin-bottom: 12px;
 }
 
-.works-item__review-text {
+.works-item__blockquote {
     margin: 0;
     margin-bottom: 16px;
 }
@@ -117,5 +118,41 @@
     &::before {
         background-image: url(../img/mustache-icon.svg);
         transform: translate(-20%, -50%);
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .works-item {
+    display: flex;
+    
+    }
+
+    .works-item__image-wrapper {
+        height: auto;
+        width: 270px;
+        flex-shrink: 0;
+    }
+    
+    .works-item--work-of-month .works-item__image-wrapper {
+        
+        &::before {
+            bottom: 394px;
+        }
+        &::after {
+            bottom: 394px;
+        }
+    }
+ 
+    .works-item__review {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 46px;
+        padding-bottom: 30px;
+        border: 1px solid #e5ddd5;
+        border-left: none;
+        flex-grow: 1;
     }
 }
