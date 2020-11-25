@@ -23,6 +23,42 @@
     height: auto;
 }
 
+.works-item--work-of-month .works-item__image-wrapper {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "Работа месяца";
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 20px; 
+        font-weight: bold;
+        color: #ffffff;
+        padding-left: 24px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 168px;
+        bottom: 29px;
+        left: 0;
+        box-sizing: border-box;
+        background-color: #826550;
+        z-index: 2; //и без него работает, но лучше подстраховаться
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        border: 25px solid #826550;
+        border-left: none;
+        border-right: 8px solid transparent;
+        bottom: 29px;
+        left: 168px;
+    }
+}
+
+
 .works-item__review {
     padding: 20px;
     border: 1px solid #e5ddd5;

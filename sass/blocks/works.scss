@@ -34,3 +34,28 @@
     margin: 0;
     margin-bottom: 32px;
 }
+
+@media (min-width: $tablet-width) {
+    .works {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: -42px;
+            height: 42px;
+            background-position: center;
+            background-image: url("../img/corner-double.svg");
+        }
+    }
+
+    .works__wrapper {
+        width: 84%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 42px;
+        padding-bottom: 50px;
+    }
+}
