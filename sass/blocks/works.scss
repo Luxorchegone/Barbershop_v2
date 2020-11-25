@@ -1,0 +1,36 @@
+.works {
+    background-color: $bg-lightgray;
+    color: black;
+}
+
+.works__wrapper {
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 36px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -35px;
+        height: 35px;
+        background-image: url("../img/corner-light.svg");
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+
+        fill: $bg-lightgray;
+    }
+}
+
+.works__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+}

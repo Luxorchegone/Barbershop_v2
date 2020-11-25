@@ -57,83 +57,104 @@
         </nav>
     </header>
     <main class="page-main">
-        <header class="page-title">
-            <h1 class="page-title__title">Наши работы</h1>
-            <a class="button" href="#">На главную</a>
-        </header>
+
         <!--<h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1> -->
         <section class="works">
-            <article class="works-item works-item--work-of-month">
-                <div class="works-item__image-wrapper">
-                    <picture></picture>
-                </div>
-                <div class="works-item__rewiev">
-                    <h2 class=works-item__rewiev-title>
-                        Лжепетр Мчиславский
-                    </h2>
-                    <blockquote class="works-item__rewiev-text">
-                        Где я только не стригся, но так как делаете это вы - не умеет никто другой! Еще раз спасибо и до
-                        скорого!
-                    </blockquote>
-                    <ul class="works-item__parameter-list">
-                        <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
-                        <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритье</li>
-                        <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="works-item">
-                <div class="works-item__image-wrapper">
-                    <picture></picture>
-                </div>
-                <div class="works-item__rewiev">
-                    <h2 class=works-item__rewiev-title>
-                        Саша Мальцев
-                    </h2>
-                    <blockquote class="works-item__rewiev-text">
-                        Попросил омолодить и омолодили!
-                        Кто теперь скажет, что мне 45?
-                    </blockquote>
-                    <ul class="works-item__parameter-list">
-                        <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="works-item">
-                <div class="works-item__image-wrapper">
-                    <picture></picture>
-                </div>
-                <div class="works-item__rewiev">
-                    <h2 class=works-item__rewiev-title>
-                        Владимир Иваныч
-                    </h2>
-                    <blockquote class="works-item__rewiev-text">
-                        К зимнему сезону — готов!
-                    </blockquote>
-                    <ul class="works-item__parameter-list">
-                        <li class="works-item__parameter-item works-item__parameter-item--shaving">Борода</li>
-                        <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="works-item works-item--work-of-month">
-                <div class="works-item__image-wrapper">
-                    <picture></picture>
-                </div>
-                <div class="works-item__rewiev">
-                    <h2 class=works-item__rewiev-title>
-                        Винстон Синий
-                    </h2>
-                    <blockquote class="works-item__rewiev-text">
-                        Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
-                    </blockquote>
-                    <ul class="works-item__parameter-list">
-                        <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
-                    </ul>
-                </div>
-            </article>
-        </section>   
-       
+            <div class="works__wrapper">
+                <h1 class="works__title">Наши работы</h1>
+                <article class="works-item works-item--work-of-month">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                                alt="Пример нашей работы»">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class=works-item__review-title>
+                            Лжепётр Мчиславский
+                        </h2>
+                        <blockquote class="works-item__review-text">
+                            Где я только не стригся, но так как делаете это вы - не умеет никто другой! Еще раз спасибо
+                            и до
+                            скорого!
+                        </blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                            <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритье</li>
+                            <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                                alt="Пример нашей работы»">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class=works-item__review-title>
+                            Саша Мальцев
+                        </h2>
+                        <blockquote class="works-item__review-text">
+                            Попросил омолодить и омолодили!
+                            Кто теперь скажет, что мне 45?
+                        </blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                                alt="Пример нашей работы»">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class=works-item__review-title>
+                            Владимир Иваныч
+                        </h2>
+                        <blockquote class="works-item__review-text">
+                            К зимнему сезону — готов!
+                        </blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--shaving">Борода</li>
+                            <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <p class="works-item__image-wrapper">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x">
+                            <img class="works-item__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                                alt="Пример нашей работы»">
+                        </picture>
+                    </p>
+                    <div class="works-item__review">
+                        <h2 class=works-item__review-title>
+                            Винстон Синий
+                        </h2>
+                        <blockquote class="works-item__review-text">
+                            Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
+                        </blockquote>
+                        <ul class="works-item__parameter-list">
+                            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <section class="price">
             <h2 class="price__title">Прейскурант</h2>
             <table class="stats__list">
@@ -152,16 +173,18 @@
     <footer class="page-footer">
         <div class="page-footer__wrapper">
             <div class="page-footer__contacts contacts">
-                <b class="page-footer__title">Барбершоп «Бородинский»</b>
+                <p class="page-footer__title">
+                    <b>Барбершоп Бородинский</b>
+                </p>
                 <p class="page-footer__text">
-                    г.Санкт-Питербург, ул. Большая Конюшенная 19/8<br>
-                    <a class="contacts__phone" href="tel:+78125556666">
-                        <span class="contacts__phone-mobile">Тел.:</span>+7 (812) 555-66-66
+                    г. Санкт-Питербург, ул. Большая Конюшенная 19/8<br>
+                    <a class="contacts__phone button button--footer" href="tel:+78125556666">
+                        <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
                     </a>
                 </p>
             </div>
             <div class="page-footer__social social">
-                <b class="social__title">Давайте дружить!</b>
+                <h2 class="social__title">Давайте дружить!</h2>
                 <ul class="social__list">
                     <li class="social__item">
                         <a class="social__link social__link--vkontakte" href="https://vk.com">
@@ -181,30 +204,14 @@
                 </ul>
             </div>
             <div class="page-footer__copyright copyright">
-                <b class="copyright__text">Разработано:</b>
-                <a class="button copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
+                <p class="copyright__text">Разработано:</p>
+                <a class="button copyright__link button--footer" href="https://htmlacademy.ru/intensive/adaptive">
                     HTML Academy
                 </a>
             </div>
         </div>
     </footer>
-    <script>
-        let navMain = document.querySelector('.main-nav');
-        let navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', () => {
-            if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-            } else {
-                navMain.classList.remove('main-nav--opened');
-                navMain.classList.add('main-nav--closed');
-            }
-
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
