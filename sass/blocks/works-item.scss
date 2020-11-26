@@ -24,7 +24,7 @@
     height: auto;
 }
 
-.works-item--work-of-month .works-item__image-wrapper {
+.works-item--work-of-month {
     position: relative;
     &::before {
         position: absolute;
@@ -39,7 +39,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         width: 168px;
-        bottom: 29px;
+        top: 400px;
         left: 0;
         box-sizing: border-box;
         background-color: #826550;
@@ -54,11 +54,10 @@
         border: 25px solid #826550;
         border-left: none;
         border-right: 8px solid transparent;
-        bottom: 29px;
+        top: 400px;
         left: 168px;
     }
 }
-
 
 .works-item__review {
     padding: 20px;
@@ -91,6 +90,10 @@
     font-size: 16px;
     text-transform: uppercase;
     
+    &:last-child {
+        margin-right: 0;
+    }
+
     &::before {
         content: "";
         top: 50%;
@@ -133,13 +136,13 @@
         flex-shrink: 0;
     }
     
-    .works-item--work-of-month .works-item__image-wrapper {
+    .works-item--work-of-month {
         
         &::before {
-            bottom: 394px;
+            top: 35px;
         }
         &::after {
-            bottom: 394px;
+            top: 35px;
         }
     }
  
@@ -155,4 +158,62 @@
         border-left: none;
         flex-grow: 1;
     }
+
+    .works-item__review-title {
+        margin-bottom: 28px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .works-item--work-of-month .works-item__image-wrapper {
+        width: 480px;
+    }
+
+    .works-item--work-of-month .works-item__review {
+        padding-left: 35px;
+        padding-right: 135px;
+        padding-top: 132px;
+        padding-bottom: 28px;
+        
+    }
+
+    .works-item--work-of-month {
+        flex-grow: 1;
+        
+        &::before {
+            top: 25px;
+            right: 0;
+            left: auto;
+
+        }
+        &::after {
+            top: 25px;
+            left: auto;
+            right: 168px;
+            border-right: none;
+            border-left: 8px solid transparent;
+        }
+    }
+
+    .works-item__review {
+        border-left: 1px solid #e5ddd5;
+        border-top: none;
+        padding: 32px;
+    }
+
+    .works-item:not(.works-item--work-of-month) {
+        display: flex;
+        flex-direction: column;
+        max-width: 292px;
+        flex-grow: 1;
+        margin-bottom: 0;
+
+    }
+
+    .works-item__image-wrapper {
+       width: auto;
+    }
+    
+    
 }

@@ -1,6 +1,7 @@
 .works {
     background-color: $bg-lightgray;
     color: black;
+    position: relative;
 
     &::after {
         content: "";
@@ -34,6 +35,10 @@
     margin-bottom: 32px;
 }
 
+.works__return-to-main {
+    display: none;
+}
+
 @media (min-width: $tablet-width) {
     .works {
         position: relative;
@@ -63,7 +68,7 @@
 
     .works__wrapper {
         width: 84%;
-        max-width: 1200px;
+        max-width: 960px;
         margin: 0 auto;
         padding: 0;
         padding-top: 60px;
@@ -71,8 +76,38 @@
     }
     
     .works__return-to-main {
+        display: block;
         position: absolute;
         top: 55px;
         right: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .works {
+
+        &::before {
+            top: -67px;
+            height: 67px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }    
+
+    .works__title {
+        margin-bottom: 82px;
+
+    }
+
+    .works__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .works__wrapper {
+        padding-bottom: 88px;
     }
 }
