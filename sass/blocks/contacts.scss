@@ -23,3 +23,9 @@
         padding-bottom: 52px;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .contacts__phone {
+        padding-bottom: 0;
+    }
+}

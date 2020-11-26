@@ -30,7 +30,13 @@
             background-image: url("../img/bg-header@2x.jpg");
             background-size: 1338px auto;
         }
+
+        &--inner-page {
+            height: 213px;
+        }
     }
+
+
     .page-header__logo img{
         display: block;
         width: 370px;
@@ -43,9 +49,12 @@
 @media (min-width: $desktop-width) {
     .page-header__logo {
         height: 648px;
-
         background-position: center 0;
         background-size: cover;
+
+        &--inner-page {
+            height: 306px;
+        }
     }
     .page-header__logo img{
         margin-top: 57px;

@@ -37,7 +37,7 @@
         padding-bottom: 38px;
         border: none;
         width: 84%;
-        max-width: 1200px;
+        max-width: 960px;
         margin: 0 auto;
         position: relative;
     }
@@ -65,6 +65,10 @@
     .page-footer__wrapper {
         display: flex;
         justify-content: space-between;
+    }
+
+    .page-footer__title {
+        margin-bottom: 16px;
     }
 
     .page-footer__copyright {
