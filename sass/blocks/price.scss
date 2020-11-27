@@ -1,3 +1,100 @@
 .price {
-    padding: 20px;
+    background-color: #353535;
+    position: relative;
+        
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -35px;
+        height: 35px;
+        background-image: url("../img/corner-photo.svg");
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+}
+
+
+.price__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.price__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.price__table {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.price__table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.price__service-name {
+    font-weight: bold; 
+}
+
+.price__description {
+    order: 4;
+    width: 120%;
+}
+
+.price__discount {
+    font-size: 20px;
+    border: 1px solid #484848;
+    height: 90px;
+    margin: 0;
+    text-align: center;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 30px;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 15px;
+        left: 15px;
+        background-image: url(../img/clock-illustration.svg);
+        
+    }
+
+    & span {
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: $mobile-width-only) {
+    .price__description span {
+        
+        &::before {
+            content: "(";
+        }
+    
+        &::after {
+            content: ")";
+        }
+    }
+
+    .price__row-number {
+        display: none;
+    }
 }
