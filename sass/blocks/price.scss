@@ -1,7 +1,7 @@
 .price {
     background-color: #353535;
     position: relative;
-        
+
     &::after {
         content: "";
         position: absolute;
@@ -25,6 +25,7 @@
 
 .price__title {
     font-size: 30px;
+    line-height: 30px;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -32,25 +33,14 @@
 }
 
 .price__table {
-  margin: 0 auto;
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 28px;
-}
-
-.price__table tr {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 28px;
 }
 
 .price__service-name {
-    font-weight: bold; 
-}
-
-.price__description {
-    order: 4;
-    width: 120%;
+    font-weight: bold;
 }
 
 .price__discount {
@@ -59,13 +49,13 @@
     height: 90px;
     margin: 0;
     text-align: center;
-    display: flex;   
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 100px;
     padding-right: 30px;
     position: relative;
-    
+
     &::before {
         content: "";
         position: absolute;
@@ -74,7 +64,7 @@
         top: 15px;
         left: 15px;
         background-image: url(../img/clock-illustration.svg);
-        
+
     }
 
     & span {
@@ -83,12 +73,24 @@
 }
 
 @media (max-width: $mobile-width-only) {
+
+    .price__table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .price__description {
+        order: 4;
+        width: 120%;
+    }
+
     .price__description span {
-        
+
         &::before {
             content: "(";
         }
-    
+
         &::after {
             content: ")";
         }
@@ -96,5 +98,81 @@
 
     .price__row-number {
         display: none;
+    }
+
+}
+
+@media (min-width: $tablet-width) {
+
+    .price__table {
+
+        border-collapse: collapse;
+        margin-bottom: 9px;
+
+        & td {
+            border: 1px solid #484848;
+            padding: 14px 18px;
+        }
+    }
+
+    .price {
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .price__wrapper {
+        width: 84%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 80px;
+        padding-bottom: 58px;
+    }
+
+    .price__title {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .price__row-number {
+        text-align: center;
+        width: 11.5%;
+        color: #727272;
+    }
+
+    .price__service-name {
+        text-align: left;
+        width: 39.5%;
+    }
+
+    .price__description {
+        text-align: center;
+        width: 25%;
+    }
+
+    .price__value {
+        text-align: left;
+        width: 25%;
+    }
+
+    .price__discount {
+        font-size: 30px;
+        font-weight: bold; 
+        height: 112px;
+        margin: 0;
+        text-transform: uppercase;
+        padding-left: 100px;
+        padding-right: 30px;
+    
+        &::before {
+            width: 72px;
+            height: 72px;
+            top: 20px;
+            left: 26px;
+        }
     }
 }
