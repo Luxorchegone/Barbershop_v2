@@ -45,18 +45,19 @@
     .page-footer__text {
         padding: 0;
         text-align: left;
+        margin-bottom: 40px;
     }
 
     .page-footer__title {
         text-align: left;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .page-footer__copyright {
         position: absolute;
         right: 0;
-        top: 12px;
+        top: 14px;
         padding-right: 0;
     }
 }
