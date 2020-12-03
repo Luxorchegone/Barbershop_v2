@@ -1,5 +1,12 @@
-@mixin reset-list{
+@mixin reset-list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@mixin tablet-wrapper-base {
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
 }

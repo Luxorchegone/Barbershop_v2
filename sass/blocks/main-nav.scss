@@ -151,9 +151,7 @@
     .main-nav__wrapper {
         display: flex;
         justify-content: space-between;
-        width: 84%; // Из расчета 640px/768px ~ 84%
-        max-width: 960px; //960px ширина контейнера меню на десктопной версии
-        margin: 0 auto;
+        @include tablet-wrapper-base();
     }
 
     .main-nav__toggle {

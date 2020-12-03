@@ -68,10 +68,7 @@
     }
 
     .works__wrapper {
-        width: 84%;
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 0;
+        @include tablet-wrapper-base();
         padding-top: 60px;
         padding-bottom: 62px;
     }

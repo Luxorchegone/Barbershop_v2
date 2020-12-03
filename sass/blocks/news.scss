@@ -133,9 +133,7 @@
 
 @media (min-width: $tablet-width) {
     .news__wrapper {
-        width: 84%;
-        max-width: 960px;
-        margin: 0 auto;
+        @include tablet-wrapper-base();
         position: relative;
         padding-top: 92px;
         padding-bottom: 12px;

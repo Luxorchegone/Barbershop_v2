@@ -122,10 +122,7 @@
     }
 
     .price__wrapper {
-        width: 84%;
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 0;
+        @include tablet-wrapper-base();
         padding-top: 80px;
         padding-bottom: 58px;
     }
@@ -220,8 +217,5 @@
             top: 30px;
             left: 64px;
         }
-
     }
-
-
 }

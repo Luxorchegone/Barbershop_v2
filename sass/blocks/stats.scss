@@ -106,9 +106,7 @@
 
 @media (min-width: $tablet-width) {
     .stats {
-        width: 84%;
-        max-width: 960px;
-        margin: 0 auto;
+        @include tablet-wrapper-base();
         margin-top: -185px;
     }
 

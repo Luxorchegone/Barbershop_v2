@@ -103,9 +103,7 @@
     }
 
     .reviews__wrapper {
-        width: 84%;
-        max-width: 960px;
-        margin: 0 auto;
+        @include tablet-wrapper-base();
         position: relative;
         padding-top: 46px;
         padding-bottom: 72px;
