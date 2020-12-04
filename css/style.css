@@ -212,7 +212,8 @@ body {
     justify-content: space-between;
     width: 84%;
     max-width: 960px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0; }
   .main-nav__toggle {
     display: none; } }
 
@@ -303,6 +304,7 @@ body {
     width: 84%;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0;
     margin-top: -185px; }
   .stats__header {
     position: relative;
@@ -645,6 +647,7 @@ body {
     width: 84%;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0;
     padding-top: 42px;
     padding-bottom: 50px; }
   .advantages__item {
@@ -816,6 +819,7 @@ body {
     width: 84%;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0;
     position: relative;
     padding-top: 92px;
     padding-bottom: 12px; }
@@ -995,6 +999,7 @@ body {
     width: 84%;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0;
     position: relative;
     padding-top: 46px;
     padding-bottom: 72px; }
@@ -1117,6 +1122,7 @@ body {
     width: 84%;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0;
     position: relative; }
   .page-footer__text {
     padding: 0;
@@ -1642,3 +1648,140 @@ body {
       height: 144px;
       top: 30px;
       left: 64px; } }
+
+.form {
+  background-color: #f8f5f2;
+  color: #000000; }
+
+.form__wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.form__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 28px; }
+
+.form__text-fields {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 38px; }
+
+.form__text {
+  margin-bottom: 10px;
+  border-radius: 0;
+  padding: 14px 18px;
+  border: 1px solid #e5ddd5; }
+  .form__text:nth-child(3), .form__text:nth-child(5) {
+    margin-bottom: 32px; }
+  .form__text:last-child {
+    margin-bottom: 0; }
+  .form__text::-moz-placeholder {
+    color: #000000; }
+  .form__text:-ms-input-placeholder {
+    color: #000000; }
+  .form__text::placeholder {
+    color: #000000; }
+
+.form__beard-models {
+  border: none;
+  padding: 0;
+  margin-bottom: 14px; }
+
+.form__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 30px; }
+
+.form__radio-buttons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .form__radio-buttons-list input {
+    display: none; }
+
+.form__beard-model {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-align: center; }
+
+.form__add-services {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+  .form__add-services input {
+    display: none; }
+
+.form__checkbox {
+  padding-left: 60px;
+  line-height: 36px;
+  margin-bottom: 20px; }
+  .form__checkbox:last-child {
+    margin-bottom: 0; }
+
+.radio-button {
+  padding-top: 60px;
+  position: relative; }
+  .radio-button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e5ddd5;
+    background-color: #ffffff; }
+
+#beard-model-1:checked ~ .radio-button[for="beard-model-1"]::after,
+#beard-model-2:checked ~ .radio-button[for="beard-model-2"]::after,
+#beard-model-3:checked ~ .radio-button[for="beard-model-3"]::after,
+#beard-model-4:checked ~ .radio-button[for="beard-model-4"]::after,
+#beard-model-5:checked ~ .radio-button[for="beard-model-5"]::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #e5ddd5;
+  background-color: #ffffff;
+  z-index: 5; }
+
+.checkbox {
+  position: relative; }
+  .checkbox::before {
+    position: absolute;
+    content: "";
+    text-align: center;
+    font-size: 35px;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e5ddd5;
+    background-color: #ffffff; }
+
+#paint-beard:checked ~ .checkbox[for="paint-beard"]::before,
+#twist-mustache:checked ~ .checkbox[for="twist-mustache"]::before,
+#comb-beard:checked ~ .checkbox[for="comb-beard"]::before,
+#trim-the-temple:checked ~ .checkbox[for="trim-the-temple"]::before,
+#remove-gray-hair:checked ~ .checkbox[for="remove-gray-hair"]::before,
+#polish-the-bald:checked ~ .checkbox[for="polish-the-bald"]::before {
+  content: "\2713"; }

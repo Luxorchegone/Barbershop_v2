@@ -1,0 +1,28 @@
+.checkbox {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        text-align: center;
+        font-size: 35px;
+        top: 0;
+        left: 0;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #e5ddd5;
+        background-color: #ffffff;
+    }
+}
+
+#paint-beard:checked ~ .checkbox[for="paint-beard"],
+#twist-mustache:checked ~ .checkbox[for="twist-mustache"],
+#comb-beard:checked ~ .checkbox[for="comb-beard"],
+#trim-the-temple:checked ~ .checkbox[for="trim-the-temple"],
+#remove-gray-hair:checked ~ .checkbox[for="remove-gray-hair"],
+#polish-the-bald:checked ~ .checkbox[for="polish-the-bald"] {
+
+    &::before {
+        content: "\2713";
+    }       
+}
