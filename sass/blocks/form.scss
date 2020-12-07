@@ -1,14 +1,28 @@
 .form {
     background-color: $bg-lightgray;
     color: #000000;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -35px;
+        height: 35px;
+        background-image: url("../img/corner-light.svg");
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        fill: $bg-lightgray;
+        z-index: 10;
+    }
 }
 
 .form__wrapper {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    
-
+    padding-bottom: 40px;
 }
 
 .form__title {
@@ -24,7 +38,7 @@
 .form__text-fields {
     display: flex;
     flex-direction: column;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
 }
 
 .form__text {
@@ -32,11 +46,7 @@
     border-radius: 0;
     padding: 14px 18px;
     border: 1px solid #e5ddd5;
-
-    &:nth-child(3),
-    &:nth-child(5) {
-        margin-bottom: 32px;
-    }
+    resize: none;
 
     &:last-child {
         margin-bottom: 0;
@@ -45,6 +55,11 @@
     &::placeholder {
         color: #000000;
     }
+}
+
+.form__text--patronymic,
+.form__text--email {
+    margin-bottom: 32px;
 }
 
 .form__beard-models {
@@ -57,8 +72,11 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 46px;
+}
 
+.form__radio-button {
+    padding-top: 60px;
 }
 
 .form__radio-buttons-list {
@@ -86,6 +104,7 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    margin-bottom: 48px;
 
     & input {
         display: none;
@@ -100,4 +119,161 @@
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.form__return-to-main {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .form {
+        padding-bottom: 76px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: -42px;
+            height: 42px;
+            background-position: center;
+            background-image: url("../img/corner-double.svg");
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .form__wrapper {
+        @include tablet-wrapper-base();
+        padding-top: 56px;
+        position: relative;
+    
+    }
+
+    .form__return-to-main {
+        display: block;
+        position: absolute;
+        top: 51px;
+        right: 0;
+    }
+
+    .form__title {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
+        margin-bottom: 72px;
+    }
+
+    .form__text-fields {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .form__text {
+        box-sizing: border-box;
+        width: 33.33%;
+        margin-bottom: 35px;
+        padding: 20px 25px;
+        
+        &:nth-child(n+4) {
+            width: 100%;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            border-left: none;
+        }
+
+        &::placeholder {
+            font-size: 24px;
+            line-height: 27px;
+        }
+    }
+
+    .form__beard-models,
+    .form__add-services {
+        border-top: 1px solid #e5ddd5;    
+    }
+    
+    .form__subtitle {
+        font-size: 30px;
+        line-height: 30px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .form__radio-button {
+        font-size: 24px;
+        line-height: 24px;
+        padding-top: 80px;
+        margin-bottom: 34px;
+    }
+
+    .form__beard-model {
+        margin-bottom: 40px;
+    }
+    
+    .form__add-services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+        & .form__subtitle {
+            margin-bottom: 68px;
+        }
+    }    
+
+    .form__checkbox {
+        box-sizing: border-box;
+        width: 49.7%;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 46px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form {
+        
+        &::before {
+            top: -65px;
+            height: 65px;
+        }
+    }
+
+    .form__wrapper {
+        padding-top: 60px;
+    }
+
+    .form__return-to-main {
+        top: 55px;
+    }
+
+    .form__text-fields {
+        justify-content: space-between;
+    }
+
+    .form__text {
+        width: 30.7%;
+        margin-bottom: 35px;
+        padding: 20px 25px;
+                
+        &:nth-child(2),
+        &:nth-child(3) {
+            border-left: 1px solid #e5ddd5;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5) {
+            width: 48%;
+        }
+
+        &::placeholder {
+            font-size: 24px;
+            line-height: 27px;
+        }
+    }
+
 }

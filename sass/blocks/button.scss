@@ -46,8 +46,33 @@
     }
 }
 
+.button--brown {
+    border: none;
+    color: #ffffff;
+    background-color: #826550;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        border-color: #d5c9bd;
+    }
+
+    &:active {
+        color: rgba(0, 0, 0, 0.3);
+        background-color: #d5c9bd;
+    }
+}
+
 @media (min-width: $tablet-width) {
     .button {
       width: 160px;
+    }
+
+    .button--brown {
+        font-size: 24px;
+        line-height: 24px;
+        width: 100%;
+        padding-top: 23px;
+        padding-bottom: 23px;
     }
 }
