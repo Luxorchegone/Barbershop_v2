@@ -236,7 +236,7 @@
 
 @media (min-width: $desktop-width) {
     .form {
-        
+        padding-bottom: 88px;
         &::before {
             top: -65px;
             height: 65px;
@@ -253,6 +253,7 @@
 
     .form__text-fields {
         justify-content: space-between;
+        margin-bottom: 70px;
     }
 
     .form__text {
@@ -274,6 +275,22 @@
             font-size: 24px;
             line-height: 27px;
         }
+    }
+
+    .form__subtitle {
+        margin-bottom: 50px;
+    }
+
+    .form__beard-model {
+        margin-bottom: 45px;
+    }
+
+    .form__checkbox {
+        width: 33.33%;
+    }
+    
+    .form__add-services {
+        margin-bottom: 34px;
     }
 
 }
