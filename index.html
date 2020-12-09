@@ -34,10 +34,10 @@
                         <a href="form.html">Записаться</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">Контакты</a>
+                        <a href="#contacts">Контакты</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">HTML Academy</a>
+                        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                     </li>
                 </ul>
                 <ul class="main-nav__list user-list">
@@ -233,7 +233,7 @@
                 </p>
                 <p class="page-footer__text">
                     г. Санкт-Питербург, ул. Большая Конюшенная 19/8<br>
-                    <a class="contacts__phone button button--footer" href="tel:+78125556666">
+                    <a class="contacts__phone button button--footer" href="tel:+78125556666" name="contacts">
                         <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
                     </a>
                 </p>
@@ -266,7 +266,35 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js" ></script>
+    <section class="login-form">
+        <div class="login-form__wrapper">
+            <span class="login-form__close">Закрыть</span>
+            <h2 class="login-form__title">
+                Личный кабинет
+            </h2>
+            <p class="login-form__description">
+                Введите свой логин и пароль, чтобы войти
+            </p>
+            <form method="POST" action="https://echo.htmlacademy.ru">
+               <p class="login-form__login-input">
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="" id="user-login" type="text" name="login" placeholder="Логин">
+               </p>
+               <p class="login-form__password-input">
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль">
+               </p>
+               <p class="login-form__help">
+                <input id="remember-me" type="checkbox">
+                <label class="checkbox" for="remember-me">Запомните меня</label>
+                
+               </p>
+                <button class="button button--brown" type="submit">Войти</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
