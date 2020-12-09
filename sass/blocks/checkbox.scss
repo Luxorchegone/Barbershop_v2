@@ -20,7 +20,9 @@
 #comb-beard:checked ~ .checkbox[for="comb-beard"],
 #trim-the-temple:checked ~ .checkbox[for="trim-the-temple"],
 #remove-gray-hair:checked ~ .checkbox[for="remove-gray-hair"],
-#polish-the-bald:checked ~ .checkbox[for="polish-the-bald"] {
+#polish-the-bald:checked ~ .checkbox[for="polish-the-bald"],
+#remember-me:checked ~ .checkbox[for="remember-me"]
+ {
 
     &::before {
         content: "\2713";

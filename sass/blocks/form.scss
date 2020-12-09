@@ -237,6 +237,7 @@
 @media (min-width: $desktop-width) {
     .form {
         padding-bottom: 88px;
+        
         &::before {
             top: -65px;
             height: 65px;
