@@ -42,7 +42,7 @@
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
-                        <a class="user-list__login" >
+                        <a class="user-list__login">
                             <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 16 16">
                                 <polygon points="0,7 7.01,7 7.01,4.06 10.96,8.01 7.01,11.91 7.01,9.06 0,9.02 " />
@@ -60,7 +60,7 @@
             <div class="form__wrapper">
                 <h1 class="form__title">Записаться на стрижку</h1>
                 <a class="form__return-to-main button button--light" href="index.html">На главную</a>
-                <form class="form__form" method="POST" name="recording-for-haircut">
+                <form class="form__form" method="POST" action="https://echo.htmlacademy.ru" name="recording-for-haircut">
                     <div class="form__text-fields">
                         <input class="form__text form__text--surname" type="text" name="surname" id="surname" placeholder="Фамилия">
                         <input class="form__text form__text--name" type="text" name="name" id="name" placeholder="Имя">
@@ -87,7 +87,7 @@
                                 <img src="img/beard-model-2.svg">
                             </li>
                             <li class="form__beard-model">
-                                <input type="radio" name="beard-model" id="beard-model-3">
+                                <input type="radio" name="beard-model-polar" id="beard-model-3">
                                 <label class="form__radio-button radio-button" for="beard-model-3">
                                     полярник
                                 </label>
@@ -186,7 +186,7 @@
     </footer>
     <section class="login-form">
         <div class="login-form__wrapper">
-            <span class="login-form__close">Закрыть</span>
+            <button class="login-form__close">Закрыть</button>
             <h2 class="login-form__title">
                 Личный кабинет
             </h2>
@@ -196,22 +196,22 @@
             <form method="POST" action="https://echo.htmlacademy.ru">
                <p class="login-form__login-input">
                 <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="" id="user-login" type="text" name="login" placeholder="Логин">
+                <input id="user-login" type="text" name="login" placeholder="Логин">
                </p>
                <p class="login-form__password-input">
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input id="user-password" type="password" name="password" placeholder="Пароль">
                </p>
                <p class="login-form__help">
-                <input id="remember-me" type="checkbox">
+                <input id="remember-me" type="checkbox" name="remember-me">
                 <label class="checkbox" for="remember-me">Запомните меня</label>
-                
+                <a href="#">Я забыл пароль! </a>
                </p>
                 <button class="button button--brown" type="submit">Войти</button>
             </form>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
