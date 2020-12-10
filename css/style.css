@@ -885,7 +885,8 @@ body {
   text-align: center;
   display: block;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  cursor: pointer; }
 
 .button--light {
   border: 1px solid #e5ddd5;
@@ -912,10 +913,9 @@ body {
   background-color: #826550;
   width: 100%; }
   .button--brown:hover, .button--brown:focus {
-    border-color: #d5c9bd; }
+    background-color: #6a4d38; }
   .button--brown:active {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: #d5c9bd; }
+    color: rgba(255, 255, 255, 0.3); }
 
 @media (min-width: 768px) {
   .button {
@@ -1712,6 +1712,12 @@ body {
   padding: 14px 18px;
   border: 1px solid #e5ddd5;
   resize: none; }
+  .form__text:hover {
+    border-color: #d5c9bd;
+    outline: none; }
+  .form__text:active, .form__text:focus {
+    outline: none;
+    border-color: #999999; }
   .form__text:last-child {
     margin-bottom: 0; }
   .form__text::-moz-placeholder {
@@ -1817,8 +1823,6 @@ body {
     padding: 20px 25px; }
     .form__text:nth-child(n+4) {
       width: 100%; }
-    .form__text:nth-child(2), .form__text:nth-child(3) {
-      border-left: none; }
     .form__text::-moz-placeholder {
       font-size: 24px;
       line-height: 27px; }
@@ -1908,6 +1912,10 @@ body {
     border-radius: 50%;
     border: 1px solid #e5ddd5;
     background-color: #ffffff; }
+  .radio-button:hover::before {
+    border-color: #d5c9be; }
+  .radio-button:active::before {
+    background-color: #d5c9bd; }
 
 #beard-model-1:checked ~ .radio-button[for="beard-model-1"]::after,
 #beard-model-2:checked ~ .radio-button[for="beard-model-2"]::after,
@@ -1926,6 +1934,13 @@ body {
   background-color: #ffffff;
   z-index: 5; }
 
+#beard-model-1:checked ~ .radio-button[for="beard-model-1"]:hover::after,
+#beard-model-2:checked ~ .radio-button[for="beard-model-2"]:hover::after,
+#beard-model-3:checked ~ .radio-button[for="beard-model-3"]:hover::after,
+#beard-model-4:checked ~ .radio-button[for="beard-model-4"]:hover::after,
+#beard-model-5:checked ~ .radio-button[for="beard-model-5"]:hover::after {
+  border-color: #d5c9be; }
+
 .checkbox {
   position: relative; }
   .checkbox::before {
@@ -1939,6 +1954,10 @@ body {
     height: 34px;
     border: 1px solid #e5ddd5;
     background-color: #ffffff; }
+  .checkbox:hover::before {
+    border-color: #d5c9be; }
+  .checkbox:active::before {
+    background-color: #d5c9bd; }
 
 #paint-beard:checked ~ .checkbox[for="paint-beard"]::before,
 #twist-mustache:checked ~ .checkbox[for="twist-mustache"]::before,
@@ -1988,7 +2007,9 @@ body {
   right: 4px;
   width: 26px;
   height: 26px;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: transparent;
+  border: none; }
   .login-form__close::before {
     content: "";
     position: absolute;
@@ -1998,6 +2019,8 @@ body {
     right: -4px;
     transform: rotate(45deg);
     background-color: black; }
+  .login-form__close:hover::after, .login-form__close:focus::after, .login-form__close:focus::after, .login-form__close:hover::before {
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.9); }
   .login-form__close::after {
     content: "";
     position: absolute;
@@ -2013,6 +2036,12 @@ body {
   box-sizing: border-box;
   border: 1px solid #e5ddd5;
   padding: 20px 20px; }
+  .login-form input:hover {
+    border-color: #d5c9bd;
+    outline: none; }
+  .login-form input:active, .login-form input:focus {
+    outline: none;
+    border-color: #999999; }
   .login-form input::-moz-placeholder {
     color: #000000; }
   .login-form input:-ms-input-placeholder {
@@ -2028,12 +2057,49 @@ body {
 .login-form__help {
   margin: 0;
   padding: 0;
-  font-size: 36px;
-  margin-bottom: 15px; }
+  font-size: 36px; }
   .login-form__help label {
     font-size: 18px;
     line-height: 36px;
     padding-left: 50px;
-    display: block; }
+    display: block;
+    margin-bottom: 15px; }
   .login-form__help input {
     display: none; }
+  .login-form__help a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 15px;
+    display: block;
+    cursor: pointer; }
+    .login-form__help a:focus, .login-form__help a:hover {
+      text-decoration: underline;
+      color: #896d5a; }
+    .login-form__help a:active {
+      color: #725743; }
+
+@media (min-width: 768px) {
+  .login-form {
+    width: 460px; }
+  .login-form__title {
+    font-size: 40px; }
+  .login-form__wrapper {
+    padding: 40px; }
+  .login-form input::-moz-placeholder {
+    font-size: 24px;
+    line-height: 27px; }
+  .login-form input:-ms-input-placeholder {
+    font-size: 24px;
+    line-height: 27px; }
+  .login-form input::placeholder {
+    font-size: 24px;
+    line-height: 27px; }
+  .login-form__help {
+    display: flex;
+    justify-content: space-between; }
+    .login-form__help a {
+      display: block;
+      line-height: 34px;
+      margin-bottom: 15px; } }
