@@ -13,6 +13,14 @@
         border: 1px solid #e5ddd5;
         background-color: #ffffff;
     }
+
+    &:hover::before {
+        border-color: #d5c9be;
+    }
+
+    &:active::before {
+        background-color: #d5c9bd;
+    }
 }
 
 #paint-beard:checked ~ .checkbox[for="paint-beard"],
