@@ -48,6 +48,18 @@
     border: 1px solid #e5ddd5;
     resize: none;
 
+    &:hover {
+        border-color: #d5c9bd;
+        outline: none; //убираем черную обводку 
+    }
+    
+    &:active,
+    &:focus {
+        outline: none; //убираем черную обводку 
+        border-color: #999999; 
+        
+    }
+    
     &:last-child {
         margin-bottom: 0;
     }
@@ -179,12 +191,7 @@
         
         &:nth-child(n+4) {
             width: 100%;
-        }
-
-        &:nth-child(2),
-        &:nth-child(3) {
-            border-left: none;
-        }
+        }      
 
         &::placeholder {
             font-size: 24px;
