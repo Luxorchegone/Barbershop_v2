@@ -12,8 +12,15 @@
         border-radius: 50%;
         border: 1px solid #e5ddd5;
         background-color: #ffffff;
-        
     } 
+    
+    &:hover::before {
+        border-color: #d5c9be;
+    }
+
+    &:active::before {
+        background-color: #d5c9bd;
+    }
 }
 
 #beard-model-1:checked ~ .radio-button[for="beard-model-1"],
@@ -34,5 +41,9 @@
         border: 1px solid #e5ddd5;
         background-color: #ffffff;
         z-index: 5;
+    }
+
+    &:hover::after {
+        border-color: #d5c9be;
     }
 }
