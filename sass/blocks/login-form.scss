@@ -4,7 +4,7 @@
     left: 50%;
     display: none;
     width: 300px;
-    transform: translateX(-50%);
+    margin-left: -150px;
     background-color: #f8f5f2;
     color: #000000;
     box-shadow: 0 30px 70px 10px rgba(0, 0, 0, 0.9);
@@ -90,7 +90,7 @@
     }
 
     &:active,
-    &:focus  {
+    &:focus {
         outline: none; //убираем черную обводку
         border-color: #999999;
          
@@ -148,8 +148,29 @@
 }
 
 @media (min-width: $tablet-width) {
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(-2000px);
+        }
+        70% {
+            transform: translateY(30px);
+        }
+        90% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .login-form--opened {
+        animation: bounce 0.6s;
+    }
+
     .login-form {
         width: 460px;
+        margin-left: -230px;
     }
 
     .login-form__title {
