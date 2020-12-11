@@ -1974,7 +1974,7 @@ body {
   left: 50%;
   display: none;
   width: 300px;
-  transform: translateX(-50%);
+  margin-left: -150px;
   background-color: #f8f5f2;
   color: #000000;
   box-shadow: 0 30px 70px 10px rgba(0, 0, 0, 0.9);
@@ -2081,8 +2081,30 @@ body {
       color: #725743; }
 
 @media (min-width: 768px) {
+  @-webkit-keyframes bounce {
+    0% {
+      transform: translateY(-2000px); }
+    70% {
+      transform: translateY(30px); }
+    90% {
+      transform: translateY(-10px); }
+    100% {
+      transform: translateY(0); } }
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px); }
+    70% {
+      transform: translateY(30px); }
+    90% {
+      transform: translateY(-10px); }
+    100% {
+      transform: translateY(0); } }
+  .login-form--opened {
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s; }
   .login-form {
-    width: 460px; }
+    width: 460px;
+    margin-left: -230px; }
   .login-form__title {
     font-size: 40px; }
   .login-form__wrapper {
